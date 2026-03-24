@@ -13,7 +13,7 @@ jobs:
       mingwTargetZip: fltk-${{ github.ref_name }}-mingw.zip
     steps:
       - name: git clone fltk
-        run: git clone --branch release-1.3.8 https://github.com/fltk/fltk.git
+        run: git clone --branch release-1.4.4 https://github.com/fltk/fltk.git
 
       - name: cmake fltk
         shell: cmd
