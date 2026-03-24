@@ -30,9 +30,9 @@ jobs:
           directory: "fltk/build/fltk"
           filename: "${{ env.mingwTargetZip }}"
           
-      - name: Release prebuilt
-        uses: ncipollo/release-action@v1
+      - name: Upload Package
+        uses: actions/upload-artifact@v4
         with:
-          artifacts: "fltk/build/fltk/${{ env.mingwTargetZip }}"
-          allowUpdates: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          name: RLTK-1.4.4
+          path: "fltk/build/fltk/$}}env.mingwTargetZip}}"
+          compression-level: 0
